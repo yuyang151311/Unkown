@@ -19,7 +19,7 @@ Unkown
 	            //倒计时完毕需要执行的操作
 	        });
 	    } else { //倒计时
-	        NSLog(@"%@", [NSString stringWithFormat:@"%ld",(long)countSecond]);
+	        NSLog(@"%@", [NSString stringWithFormat:@"%ld", (long)countSecond]);
 	        dispatch_async(dispatch_get_main_queue(), ^{
 	            //每秒需要执行的操作
 	            //在这里更新UI之类的
