@@ -7,7 +7,7 @@ Unkown
 
 
 
-	 __block int countSecond = 30; //倒计时
+	__block int countSecond = 30; //倒计时
 	dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 	dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,queue);
 	dispatch_source_set_timer(timer, dispatch_walltime(NULL, 0), 1.0 * NSEC_PER_SEC, 0); //每秒执行
@@ -59,12 +59,14 @@ Unkown
 
 floor(x)函数，是一个向下取整函数，是一个C函数 即是去不大于x的一个最大整数
 
-	floor(3.12) = 3 floor(4.9) = 4
+	floor(3.12) = 3 
+	floor(4.9) = 4
 
 与floor(x)函数对应的是ceil函数
 这个即是向上取整了
 
-	ceil(3.9) = 4  ceil(1.2) = 2
+	ceil(3.9) = 4  
+	ceil(1.2) = 2
 	
 ### 给任何一个view设置一张图片
 
